@@ -1,0 +1,192 @@
+:root {
+    --color-border: #000;
+    --color-opacity: rgba(255, 255, 255, 0);
+}
+
+/* ================================================ */
+/* ================ ОСНОВНЫЕ СТИЛИ ================ */
+/* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
+  
+.container {
+    width: 1200px;
+    /* margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px; */
+}
+/* @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+} */
+/* @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+} */
+/* @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+}
+   */
+/* .section { */
+    /* background-color: yellow;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; */
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+/* } */
+/* @media screen and (min-width: 1200px) {
+    .section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+} */
+
+/* .body { */
+    /* color: var(--primary-color-font);
+    font-family: var(--primary-font); */
+/* } */
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+  
+.list {
+    list-style: none;
+}
+  
+.link {
+    text-decoration: none;
+}
+/* ============ End of ОСНОВНЫЕ СТИЛИ ============== */
+/* ================================================ */
+
+
+/* ================================================ */
+/* ================= СТИЛИ в MAIN ================= */
+.level-section {
+    display: flex;
+    height: 700px;
+    background-image: url(../img/background3.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+.div-left {
+    width: 75%;
+    padding: 8px;
+    border: solid 2px var(--color-border);
+    border-radius: 16px;
+}
+.div-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+.div-right-top {
+    height: 300px;
+    padding: 8px;
+    border: solid 2px var(--color-border);
+    border-radius: 16px;
+}
+.div-right-bottom {
+    height: 300px;
+    padding: 8px;
+    border: solid 2px var(--color-border);
+    border-radius: 16px;
+}
+
+/* ============ End of СТИЛИ в MAIN =============== */
+/* ================================================ */
+
+
+/* ================================================ */
+/* ================= СТИЛИ палетки мозаики ======== */
+.mosaic-palette {
+    display: grid;
+    grid-template-columns: repeat(15, minmax(30px, 48px));
+    gap: 4px;
+    width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+.mosaic-palette .item-empty {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-opacity);
+    border: solid 1px var(--color-border);
+    border-radius: 4px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+}  
+.mosaic-palette .item-empty:hover {
+    transform: scale(1.1);
+}
+
+
+
+.output {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}  
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 4px;
+}  
+.color-palette .item-color {
+    padding: 0;
+    margin: 0;
+    border: solid 1px var(--color-border);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 250ms ease-in-out;
+}  
+.color-palette .item-color:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* ============ End of СТИЛИ палетки мозаики ====== */
+/* ================================================ */
